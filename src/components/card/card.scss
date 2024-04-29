@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+.card {
+	@apply bg-white shadow-md rounded-lg p-4 w-full h-full ring-1 ring-gray-100;
+}
