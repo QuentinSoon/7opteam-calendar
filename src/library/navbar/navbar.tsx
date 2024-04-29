@@ -33,14 +33,22 @@ export const NavbarHome = () => (
 				Indicateurs
 			</Button>
 			<Button rounded="full" variant="light">
-				Archives
-			</Button>
-			<Button rounded="full" variant="light">
-				Nouvelle activité
-			</Button>
-			<Button rounded="full" variant="light">
 				Cockpit
 			</Button>
+			<Dropdown>
+				<DropdownTrigger>
+					<Button rounded="full" variant="light">
+						Menu
+					</Button>
+				</DropdownTrigger>
+				<DropdownContent size="md">
+					<DropdownItem className="font-medium">Activités</DropdownItem>
+					<DropdownItem className="font-medium">Ressources</DropdownItem>
+					<DropdownItem className="font-medium">Archives</DropdownItem>
+					<DropdownSeparator />
+					<DropdownItem className="font-medium">Cree une activité</DropdownItem>
+				</DropdownContent>
+			</Dropdown>
 		</NavbarCenter>
 		<NavbarRight className="space-x-2">
 			<div className="font-medium text-sm">Bordeaux</div>
